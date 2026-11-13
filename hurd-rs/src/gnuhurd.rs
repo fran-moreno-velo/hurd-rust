@@ -1,12 +1,13 @@
+pub mod fcntl;
 pub mod fsys;
+pub mod hurd;
 pub mod ihash;
+pub mod io;
 pub mod maptime;
 pub mod ports;
 pub mod process;
-pub mod types;
-pub mod fcntl;
 pub mod stat;
-pub mod io;
+pub mod types;
 
 #[cfg(feature = "trivfs")]
 pub mod trivfs;
