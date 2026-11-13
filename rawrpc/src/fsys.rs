@@ -20,7 +20,7 @@
 
 use hurd_rs::gnumach::kern_return::{kern_return_t, KERN_SUCCESS, KERN_FAILURE};
 use hurd_rs::gnumach::port::{mach_port_t, MACH_PORT_NULL};
-use hurd_rs::gnumach::port::{MACH_PORT_RIGHT_RECIVE, MACH_PORT_RIGHT_PORT_SET};
+use hurd_rs::gnumach::port::{MACH_PORT_RIGHT_RECEIVE, MACH_PORT_RIGHT_PORT_SET};
 use hurd_rs::gnumach::port::{mach_port_allocate, mach_port_deallocate};
 use hurd_rs::gnumach::port::{mach_port_move_member};
 use hurd_rs::gnumach::task::{mach_task_self, task_get_bootstrap_port};
