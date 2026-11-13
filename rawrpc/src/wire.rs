@@ -117,7 +117,7 @@ impl WireError {
     pub fn client_code(self) -> kern_return_t {
         match self {
             WireError::Overflow | WireError::TooLong => MIG_ARRAY_TOO_LARGE,
-            _ => sys::MIG_TYPE_ERROR,
+            _ => MIG_TYPE_ERROR,
         }
     }
 }
