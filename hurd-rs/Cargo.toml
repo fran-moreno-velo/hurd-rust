@@ -1,0 +1,12 @@
+[package]
+name = "hurd-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+errno = "0.2.8"
+libc = "0.2.175"
+
+[features]
+default = []
+trivfs = []
