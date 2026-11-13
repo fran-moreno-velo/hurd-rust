@@ -6,7 +6,8 @@
 //   - tipada (sustituye a los stubs de usuario de MIG): set_value / get_value
 //   - dinámica: describe() + call_named(), comprobando la firma en ejecución
 
-use hurd_rs::gnumach::port::{mach_port_t, MACH_PORT_NULL, file_name_lookup};
+use hurd_rs::gnumach::port::{mach_port_t, MACH_PORT_NULL};
+use hurd_rs::gnuhurd::hurd::file_name_lookup;
 use rawrpc::sys;
 use rawrpc::{CallError, InterfaceDesc, MsgId, RawClient};
 use std::ffi::CString;
