@@ -156,7 +156,7 @@ pub fn port_get_receive_status(task: ipc_space_t, name: mach_port_name_t)
 }
 
 /// Copia a un Vec un array fuera de línea devuelto por MIG y lo libera.
-unsafe fn take_ool<T: Copy>(ptr: *mut T, cnt: mach_msg_type_number_t) -> Vec<T> {
+pub(crate) unsafe fn take_ool<T: Copy>(ptr: *mut T, cnt: mach_msg_type_number_t) -> Vec<T> {
   if ptr.is_null() || cnt == 0 { return Vec::new(); }
   let v = unsafe { std::slice::from_raw_parts(ptr, cnt as usize) }.to_vec();
   unsafe {
