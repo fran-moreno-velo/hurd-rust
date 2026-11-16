@@ -1,3 +1,4 @@
+pub mod auth;
 pub mod fcntl;
 pub mod fsys;
 pub mod hurd;
