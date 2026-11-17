@@ -7,6 +7,7 @@ pub mod hurd;
 pub mod idvec;
 pub mod ihash;
 pub mod io;
+pub mod iohelp;
 pub mod maptime;
 pub mod ports;
 pub mod process;
