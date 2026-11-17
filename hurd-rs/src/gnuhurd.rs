@@ -1,5 +1,6 @@
 pub mod auth;
 pub mod fcntl;
+pub mod fs;
 pub mod fsys;
 pub mod hurd;
 pub mod ihash;
