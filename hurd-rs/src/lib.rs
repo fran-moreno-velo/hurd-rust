@@ -3,6 +3,7 @@
 
 pub mod gnumach;
 pub mod gnuhurd;
+pub mod rawtrans;
 
 use std::ffi::c_int;
 
