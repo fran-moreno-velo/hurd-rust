@@ -13,7 +13,7 @@ use std::process;
 
 use crate::dataserver::Data;
 use hurd_rs::gnumach::kern_return::KERN_SUCCESS;
-use rawrpc::RawServer;
+use hurd_rs::rawtrans::RawServer;
 
 fn main() {
   let mut server = RawServer::new(Data::new(0));
