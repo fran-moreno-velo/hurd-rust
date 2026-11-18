@@ -18,8 +18,8 @@ use hurd_rs::gnumach::kern_return::kern_return_t;
 use hurd_rs::gnumach::error::{EBADF, EOPNOTSUPP};
 use hurd_rs::gnuhurd::fcntl::{O_READ, O_WRITE};
 
-use rawrpc::wire::{Kind, Reader, Wire, WireError, WireTuple, Writer};
-use rawrpc::{MsgId, Peropen, RawTranslator, Services};
+use hurd_rs::rawtrans::wire::{Kind, Reader, Wire, WireError, WireTuple, Writer};
+use hurd_rs::rawtrans::{MsgId, Peropen, RawTranslator, Services};
 use crate::clock;
 use crate::cmos;
 
