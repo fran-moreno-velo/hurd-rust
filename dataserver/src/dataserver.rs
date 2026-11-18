@@ -3,7 +3,7 @@
 //===================================================================================//
 
 use hurd_rs::gnumach::kern_return::kern_return_t;
-use rawrpc::{MsgId, Peropen, RawTranslator, Services};
+use hurd_rs::rawtrans::{MsgId, Peropen, RawTranslator, Services};
 
 pub struct Data {
   value: i32,
