@@ -6,4 +6,3 @@ edition = "2024"
 [dependencies]
 libc = "0.2.175"
 hurd-rs = { path = "../hurd-rs" }
-rawrpc  = { path = "../rawrpc" }
