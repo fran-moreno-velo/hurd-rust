@@ -8,8 +8,8 @@
 
 use hurd_rs::gnumach::port::{mach_port_t, MACH_PORT_NULL};
 use hurd_rs::gnuhurd::hurd::file_name_lookup;
-use rawrpc::sys;
-use rawrpc::{CallError, InterfaceDesc, MsgId, RawClient};
+use hurd_rs::rawtrans::rights::port_deallocate;
+use hurd_rs::rawtrans::{CallError, InterfaceDesc, MsgId, RawClient};
 use std::ffi::CString;
 use std::io;
 
@@ -27,7 +27,7 @@ impl RawClient for DataClient {
 
 impl Drop for DataClient {
   fn drop(&mut self) {
-    sys::port_deallocate(self.port);
+    port_deallocate(self.port);
   }
 }
 
