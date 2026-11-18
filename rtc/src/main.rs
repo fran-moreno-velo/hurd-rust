@@ -17,7 +17,7 @@ use std::process::ExitCode;
 
 use hurd_rs::gnumach::kern_return::KERN_SUCCESS;
 use hurd_rs::gnuhurd::fcntl::O_NORW;
-use rawrpc::RawServer;
+use hurd_rs::rawtrans::RawServer;
 use cmos::IoPortCmos;
 use rtc::Rtc;
 
