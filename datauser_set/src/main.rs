@@ -9,7 +9,7 @@ mod dataclient;
 
 use std::process::ExitCode;
 use dataclient::DataClient;
-use rawrpc::CallError;
+use hurd_rs::rawtrans::CallError;
 
 fn main() -> ExitCode {
   let args: Vec<String> = std::env::args().collect();
