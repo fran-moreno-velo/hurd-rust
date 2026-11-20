@@ -1,0 +1,18 @@
+[package]
+name = "hurd-sound"
+version = "0.1.0"
+edition = "2024"
+description = "Servidor de sonido para GNU/Hurd con el modelo de JACK (el servidor marca el ritmo)"
+
+[dependencies]
+libc = "0.2.175"
+hurd-rs = { path = "../hurd-rs", optional = true }
+
+[features]
+# Timbres con mensajes Mach (solo en GNU/Hurd).
+hurd = ["dep:hurd-rs"]
+
+[[example]]
+name = "mach_pair"
+required-features = ["hurd"]
+
