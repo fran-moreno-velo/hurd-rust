@@ -1,0 +1,9 @@
+[package]
+name = "hurd-sound"
+version = "0.1.0"
+edition = "2024"
+description = "Servidor de sonido para GNU/Hurd con el modelo de JACK (el servidor marca el ritmo)"
+
+[dependencies]
+libc = "0.2.175"
+
